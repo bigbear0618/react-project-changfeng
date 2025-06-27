@@ -1,0 +1,22 @@
+{
+  "name": "react-project-1013",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "node scripts/start.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [],
+  "author": "GrowthCoder",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "kleur": "^4.1.5",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
