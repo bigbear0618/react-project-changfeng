@@ -15,5 +15,6 @@ module.exports = merge(base(true), {
       // 托管静态资源文件
       directory: path.join(__dirname, '../public'), // 托管public下静态资源
     },
+    open: true,
   },
 })
