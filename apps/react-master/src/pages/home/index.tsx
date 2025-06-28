@@ -2,6 +2,9 @@ import Navigation from '@/components/Navigation'
 import React, { useState } from 'react'
 import Card from '@/components/Card'
 import Tabs from '@/pages/home/Tabs'
+import Creation from './Creation'
+import AdvancedBtns from './AdvancedBtns'
+import SelfFunctions from './SelfFunctions'
 
 export default function Home() {
   const [hide, setHide] = useState<boolean>(true)
@@ -18,9 +21,15 @@ export default function Home() {
         <Card className="w-2/3">
           <Tabs onChange={handleChange} />
         </Card>
-        <div className="w-1/3">
-          <Card>
-            <div>222</div>
+        <div className="w-1/3 flex flex-col flex-1">
+          <Card className="w-full">
+            <Creation />
+          </Card>
+          <Card className="w-full">
+            <AdvancedBtns />
+          </Card>
+          <Card className="w-full">
+            <SelfFunctions />
           </Card>
         </div>
       </div>
