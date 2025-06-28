@@ -1,5 +1,7 @@
 import React from 'react'
 import { Outlet, RouteObject } from 'react-router-dom'
+import Home from '../pages/home'
+import RecommendList from '../components/Recommend'
 
 export interface extraBizObject {
   title?: string
@@ -10,12 +12,12 @@ type ZHRouter = extraBizObject & RouteObject
 export const router: ZHRouter[] = [
   {
     path: '/',
-    element: <div>home</div>,
+    element: <Home />,
     title: '首页',
     children: [
       {
         path: '',
-        element: <div>推荐</div>,
+        element: <RecommendList />,
       },
       {
         path: 'follow',
