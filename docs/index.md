@@ -18,10 +18,10 @@ hero:
 
 ## 安装
 ```bash
-pnpm install changfeng-hooks
+pnpm install @changfeng/hooks
 ```
 
 ## 使用
 ```ts
-import { useToggle } from 'changfeng-hooks';
+import { useToggle } from '@changfeng/hooks';
 ```
