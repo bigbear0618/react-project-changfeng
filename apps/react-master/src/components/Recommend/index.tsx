@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { RefObject, useEffect, useRef, useState } from 'react'
 import { mockList } from '@/mock/mockList'
+import { apiGet } from '@/apis/request'
 
 const RecommendData = ({ item }: { item: (typeof mockList)[0] }) => {
   const [selected, setSelected] = useState<boolean>(false)
@@ -150,12 +151,71 @@ const RecommendData = ({ item }: { item: (typeof mockList)[0] }) => {
   )
 }
 
+const useRefInsObsState = (ref: RefObject<HTMLDivElement>) => {
+  const [list, setList] = useState([])
+  const listLenRef = useRef([])
+  const loadingRef = useRef(false)
+
+  useEffect(() => {
+    if (!ref.current) {
+      return
+    }
+
+    const intersectionObserver: IntersectionObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          if (loadingRef.current) {
+            return
+          }
+
+          loadingRef.current = true
+          apiGet({
+            url: 'recommend',
+            startNum: listLenRef.current.length,
+            pageSize: 10,
+          })
+            .then((res) => {
+              listLenRef.current = [...listLenRef.current, ...(res?.list || [])]
+              setList(listLenRef.current)
+            })
+            .finally(() => {
+              loadingRef.current = false
+            })
+        }
+      }
+    )
+
+    if (ref?.current) {
+      intersectionObserver.observe(ref.current)
+    }
+
+    return () => {
+      if (ref.current) {
+        intersectionObserver.disconnect()
+      }
+    }
+  }, [ref])
+
+  return [list, list.length]
+}
+
 export default function RecommendList() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const [list, len] = useRefInsObsState(scrollRef)
+
   return (
     <div className="flex flex-col border-t">
-      {mockList.map((item: unknown) => (
+      <h1>当前一共{len}条数据</h1>
+
+      {(list || []).map((item: unknown) => (
         <RecommendData key={item.id} item={item} />
       ))}
+      <div
+        ref={scrollRef}
+        className="flex h-14 justify-center items-center text-slate-500 border-t"
+      >
+        loading
+      </div>
     </div>
   )
 }
