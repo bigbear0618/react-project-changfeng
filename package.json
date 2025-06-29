@@ -8,7 +8,8 @@
     "preinstall": "npx only-allow pnpm",
     "start": "node scripts/start.mjs",
     "build": "node scripts/build.mjs",
-    "site": "NODE_OPTIONS=--openssl-legacy-provider dumi dev"
+    "site": "NODE_OPTIONS=--openssl-legacy-provider dumi dev",
+    "build:doc": "NODE_OPTIONS=--openssl-legacy-provider dumi build"
   },
   "keywords": [],
   "author": "GrowthCoder",
