@@ -9,6 +9,7 @@ export default {
     type: 'none', // all
     exclude: [],
   },
+  publicPath: './',
   history: {
     type: 'hash',
   },
@@ -30,6 +31,7 @@ export default {
   hash: true,
   alias: {
     '@changfeng/hooks': process.cwd() + '/packages/hooks/src/index.ts',
+    ['changfeng-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
   },
   resolve: {
     includes: ['docs', 'packages/hooks/src'],
