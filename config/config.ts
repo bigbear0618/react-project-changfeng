@@ -9,7 +9,7 @@ export default {
     type: 'none', // all
     exclude: [],
   },
-  publicPath: 'react-project-changfeng',
+  publicPath: '/react-project-changfeng/',
   history: {
     type: 'hash',
   },
