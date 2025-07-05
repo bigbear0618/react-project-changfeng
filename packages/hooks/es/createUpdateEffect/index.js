@@ -1,0 +1,1 @@
+import{useRef as r}from"react";var n=function(n){return function(t,u){var c=r(!1);n(function(){return function(){c.current=!1}},[]),n(function(){if(c.current)return t();c.current=!0},u)}};export{n as createUpdateEffect,n as default};

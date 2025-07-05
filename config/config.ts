@@ -30,8 +30,7 @@ export default {
   manifest: {},
   hash: true,
   alias: {
-    '@changfeng/hooks': process.cwd() + '/packages/hooks/src/index.ts',
-    ['changfeng-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
+    'changfeng-hooks': process.cwd() + '/packages/hooks/src/index.ts',
   },
   resolve: {
     includes: ['docs', 'packages/hooks/src'],
