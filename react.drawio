@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="7x95tADaqZdGJVADq8q-" name="第 1 页">
-        <mxGraphModel dx="1539" dy="1645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2008" dy="1798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -65,7 +65,7 @@
                 <mxCell id="10" value="vue&amp;nbsp;&amp;nbsp;&lt;div&gt;react&amp;nbsp; 通用hooks&lt;br&gt;https://ahooks.js.org/zh-CN/hooks/use-infinite-scroll/&lt;br&gt;&lt;br&gt;https://vueuse.org/core/useManualRefHistory/&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="45" y="455" width="170" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="eslint ts commitlint stylelint 等等&amp;nbsp;&lt;br&gt;&lt;br&gt;提供解决方案&lt;br&gt;&lt;br&gt;脚手架能力 init&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="13" value="eslint ts commitlint stylelint 等等&amp;nbsp;&lt;br&gt;&lt;br&gt;提供解决方案&lt;br&gt;&lt;br&gt;脚手架能力 init&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="290" y="455" width="170" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="" style="edgeStyle=none;html=1;" parent="1" source="14" target="13" edge="1">
@@ -550,6 +550,9 @@
                 </mxCell>
                 <mxCell id="181" value="AI 提效工作流集成到 开发流程中&amp;nbsp;&lt;div&gt;AI研发提效&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="780" y="740" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="182" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="270" width="140" height="160" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
