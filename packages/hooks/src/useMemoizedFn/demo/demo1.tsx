@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { useMemoizedFn } from '@changfeng/hooks'
+import { useMemoizedFn } from 'changfeng-hooks'
 
 export default () => {
   const [count, setCount] = useState(0)

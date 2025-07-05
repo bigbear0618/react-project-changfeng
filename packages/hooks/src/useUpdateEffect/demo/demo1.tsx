@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { useUpdateEffect } from '@changfeng/hooks'
+import { useUpdateEffect } from 'changfeng-hooks'
 
 export default () => {
   const [count, setCount] = useState(0)

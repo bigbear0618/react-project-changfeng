@@ -7,7 +7,7 @@
     "lib": ["dom", "esnext"],
     "paths": {
       "@/*": ["./src/*"],
-      "@changfeng/hooks": ["./src/index.ts"]
+      "changfeng-hooks": ["./src/index.ts"]
     }
   },
   "includes": ["src/**/*"],

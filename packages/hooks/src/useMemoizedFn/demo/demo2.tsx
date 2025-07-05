@@ -1,4 +1,4 @@
-import { useMemoizedFn } from '@changfeng/hooks'
+import { useMemoizedFn } from 'changfeng-hooks'
 import React, { useCallback, useRef, useState } from 'react'
 
 export default () => {

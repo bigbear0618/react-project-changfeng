@@ -1,5 +1,5 @@
 import React from 'react'
-import { useToggle } from '@changfeng/hooks'
+import { useToggle } from 'changfeng-hooks'
 
 export default () => {
   const [state, { toggle, set, setLeft, setRight }] = useToggle()
