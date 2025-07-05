@@ -1,7 +1,7 @@
 export const menus = [
   {
     title: '状态',
-    children: ['useToggle', 'useLocalStorageState'],
+    children: ['useToggle'],
   },
   {
     title: 'Effect',
