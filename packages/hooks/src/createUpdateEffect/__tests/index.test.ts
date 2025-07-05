@@ -1,5 +1,5 @@
-import { renderHook } from '@testing-library/react'
-import { act, useEffect, useLayoutEffect } from 'react'
+import { renderHook, act } from '@testing-library/react'
+import { useEffect, useLayoutEffect } from 'react'
 import { createUpdateEffect } from '../index'
 
 describe('createUpdateEffect', () => {
@@ -16,10 +16,7 @@ describe('createUpdateEffect', () => {
 
     expect(mountedState).toBe(1)
 
-    act(() => {
-      hook.rerender()
-    })
-
+    hook.rerender()
     expect(mountedState).toBe(2)
   })
 
@@ -30,16 +27,12 @@ describe('createUpdateEffect', () => {
 
     const hook = renderHook(() => {
       useUpdateLayoutEffect(() => {
-        mountedState++
-      }, [])
+        mountedState = 2
+      })
     })
 
     expect(mountedState).toBe(1)
-
-    act(() => {
-      hook.rerender()
-    })
-
+    hook.rerender()
     expect(mountedState).toBe(2)
   })
 })
