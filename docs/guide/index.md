@@ -1,4 +1,4 @@
-# @changfeng/hooks
+# changfeng-hooks
 ## 能力支持
 ### 1. 可靠的代码
 使用TS构建，提供类型定义文件
