@@ -12,8 +12,6 @@ const hookEntries = globSync('src/use*/index.ts').reduce((entries, file) => {
   return entries
 }, {})
 
-console.log('hookEntries', hookEntries)
-
 // {'useToggle/index': 'src/useToggle/index.ts'}
 
 export default [

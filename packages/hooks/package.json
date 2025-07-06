@@ -1,6 +1,6 @@
 {
   "name": "changfeng-hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "changfeng React业务 自定义hooks库",
   "main": "./lib/index.js",
