@@ -27,6 +27,7 @@
     "README.md"
   ],
   "scripts": {
+    "prebuild": "rm -rf lib dist es",
     "test": "NODE_ENV=test vitest",
     "test:coverage": "vitest --coverage",
     "test:ui": "vitest --ui",

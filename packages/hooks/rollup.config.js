@@ -82,6 +82,9 @@ export default [
       dir: 'dist',
       format: 'umd', // es amd iife cmd
       name: 'ChangfengHooks', // antd
+      globals: {
+        react: 'React',
+      },
     },
     plugins: [
       resolve(),
@@ -92,5 +95,6 @@ export default [
       }),
       terser(),
     ],
+    external: ['react'],
   },
 ]
