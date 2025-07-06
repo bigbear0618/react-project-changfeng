@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Search() {
+  // 可以使用useLocalStorageState 用户搜索历史记录 渲染逻辑
   return (
     <div className="flex">
       <input
