@@ -1,20 +1,30 @@
 const { merge } = require('webpack-merge')
-const base = require('./webpack.base.js')
+const getBaseCfg = require('./webpack.base')
 const path = require('path')
 
-module.exports = merge(base(true), {
+module.exports = merge(getBaseCfg(true), {
+  // 开发环境
   mode: 'development',
-  // source-map 生成单独的文件 出错了会标识当前报错的列和行 大 打包速度慢
+  // 源码调试
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    port: 3000, // 服务端口号
-    compress: false, // gzip压缩
-    hot: true, // 热更新 只更新当前模块
-    historyApiFallback: true, // 解决history路由404问题
+    port: 3000,
+    compress: false, // 不压缩，热更新，快一些
+    hot: true, // 热更新
+    historyApiFallback: true, // history 路由 404 问题
     static: {
-      // 托管静态资源文件
-      directory: path.join(__dirname, '../public'), // 托管public下静态资源
+      // 托管的静态 public 文件夹
+      directory: path.join(__dirname, '../public'),
     },
     open: true,
+    proxy: [
+      {
+        '/api': {
+          target: 'http://localhost:3010',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, ''),
+        },
+      },
+    ],
   },
 })
