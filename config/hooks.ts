@@ -1,7 +1,16 @@
 export const menus = [
   {
+    title: '生命周期',
+    children: ['useUnmount', 'useUnmountedRef'],
+  },
+  {
     title: '状态',
-    children: ['useToggle', 'useLocalStorageState'],
+    children: [
+      'useToggle',
+      'useBoolean',
+      'useGetState',
+      'useLocalStorageState',
+    ],
   },
   {
     title: 'Effect',
@@ -9,6 +18,6 @@ export const menus = [
   },
   {
     title: '进阶',
-    children: ['useMemoizedFn'],
+    children: ['useLatest', 'useMemoizedFn'],
   },
 ]

@@ -44,6 +44,10 @@ export default {
       title: 'Hooks',
       path: '/hooks',
     },
+    {
+      title: 'GitHub',
+      path: 'https://github.com/bigbear0618/react-project-changfeng',
+    },
   ],
   menus: {
     '/': [
