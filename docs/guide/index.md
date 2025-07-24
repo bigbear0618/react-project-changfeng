@@ -13,20 +13,18 @@
 抽取业务中常用的hooks ，提升开发效率，减少重复造轮子的时间成本
 
 ## 技术选型
-### 包管理工具 -- pnpm
-
-作为基础包 ，选择社区比较推荐的`pnpm workspace`解决方案，主要原因：
-1. `pnpm` 安装速度快，磁盘利用率高
-2. 支持多包管理，每个包独立，互不干扰
-3. 支持`workspace`，可以在一个项目中管理多个包
-
-### 构建工具
-- `webpack`
-
-### 静态文件打包工具  --dumi
-- `dumi` 📖 为组件开发场景而生的文档工具
-
- ### 测试工具
- - `jest`  测试框架
- - `react-testing-library`  测试库
- - 完善的测试用例  确保代码质量
+1. 项目管理：pnpm + workspace
+2. 核心框架：React19 + TypeScript 5.x
+  1. 作用：Hooks开发与类型安全
+3. 打包工具：Rollup + plugins
+  1. 作用：生产级打包
+4. 测试工具：vitest + React Testing Library
+  1. 作用：单元测试+Hooks模拟测试
+  2. 完善的测试用例  确保代码质量
+5. 工程化：Eslint + Prettier + Husky + Lint-staged
+  1. 作用：代码规范和钩子
+6. 站点：dumi2
+  1. 作用：交互文档演示 
+  2. 为组件开发场景而生的文档工具
+7. CI/CD: GitHub Actions
+  1. 作用：站点的自动化构建和部署
