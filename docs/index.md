@@ -2,7 +2,7 @@
 title: 首页
 hero:
     image: /react-project-changfeng/react.png
-    desc: 'React 业务通用Hooks库'
+    desc: '企业级React 业务通用Hooks库'
     actions:
       - text: 指南
         link: /guide
