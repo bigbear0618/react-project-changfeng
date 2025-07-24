@@ -29,7 +29,7 @@ importers:
         version: 1.13.8
       dumi:
         specifier: ^1.1.48
-        version: 1.1.54(react-dom@19.1.0(react@19.1.0))(react-router@5.2.0(react@16.14.0))(react@19.1.0)(typescript@5.8.3)
+        version: 1.1.54(react-dom@19.1.0(react@19.1.0))(react-router@5.2.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       eslint:
         specifier: ^9.29.0
         version: 9.30.0(jiti@2.4.2)
@@ -157,6 +157,9 @@ importers:
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
+      '@types/mockjs':
+        specifier: ^1.0.10
+        version: 1.0.10
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
@@ -175,6 +178,9 @@ importers:
       jsdom:
         specifier: ^26.1.0
         version: 26.1.0
+      mockjs:
+        specifier: ^1.1.0
+        version: 1.1.0
       rollup:
         specifier: ^4.44.2
         version: 4.44.2
@@ -1832,6 +1838,9 @@ packages:
 
   '@types/mime@1.3.5':
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
+
+  '@types/mockjs@1.0.10':
+    resolution: {integrity: sha512-SXgrhajHG7boLv6oU93CcmdDm0HYRiceuz6b+7z+/2lCJPTWDv0V5YiwFHT2ejE4bQqgSXQiVPQYPWv7LGsK1g==}
 
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
@@ -4984,6 +4993,10 @@ packages:
 
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
+
+  mockjs@1.1.0:
+    resolution: {integrity: sha512-eQsKcWzIaZzEZ07NuEyO4Nw65g0hdWAyurVol1IPl1gahRwY+svqzfgfey8U8dahLwG44d6/RwEzuK52rSa/JQ==}
+    hasBin: true
 
   move-concurrently@1.0.1:
     resolution: {integrity: sha512-hdrFxZOycD/g6A6SoI2bB5NA/5NEqD0569+S47WZhPvm46sD50ZHdYaFmnua5lndde9rCHGjmfK7Z8BuCt/PcQ==}
@@ -9342,6 +9355,8 @@ snapshots:
 
   '@types/mime@1.3.5': {}
 
+  '@types/mockjs@1.0.10': {}
+
   '@types/node-forge@1.3.11':
     dependencies:
       '@types/node': 24.0.7
@@ -9484,22 +9499,22 @@ snapshots:
       '@umijs/deps': 3.5.43
       '@umijs/utils': 3.5.43
 
-  '@umijs/bundler-utils@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)':
+  '@umijs/bundler-utils@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)':
     dependencies:
       '@umijs/babel-preset-umi': 3.5.43
-      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/utils': 3.5.43
     transitivePeerDependencies:
       - react
       - react-dom
       - react-router
 
-  '@umijs/bundler-webpack@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)':
+  '@umijs/bundler-webpack@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)':
     dependencies:
-      '@umijs/bundler-utils': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/bundler-utils': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/case-sensitive-paths-webpack-plugin': 1.0.1
       '@umijs/deps': 3.5.43
-      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/utils': 3.5.43
       jest-worker: 26.6.2
       node-libs-browser: 2.2.1
@@ -9544,14 +9559,14 @@ snapshots:
     dependencies:
       '@types/react-router-config': 5.0.2
       '@umijs/babel-preset-umi': 3.5.43
-      '@umijs/bundler-webpack': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/bundler-webpack': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/core': 3.5.43
       '@umijs/deps': 3.5.43
       '@umijs/renderer-mpa': 3.5.43(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
-      '@umijs/renderer-react': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/renderer-react': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/runtime': 3.5.43(react@16.14.0)
       '@umijs/server': 3.5.43
-      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/utils': 3.5.43
       ansi-html: 0.0.9
       core-js: 3.6.5
@@ -9564,8 +9579,8 @@ snapshots:
       mime: 1.4.1
       react: 16.14.0
       react-refresh: 0.10.0
-      react-router: 5.2.0(react@16.14.0)
-      react-router-config: 5.1.1(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      react-router: 5.2.0(react@19.1.0)
+      react-router-config: 5.1.1(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       react-router-dom: 5.2.0(react@16.14.0)
       regenerator-runtime: 0.13.5
       schema-utils: 3.3.0
@@ -9639,7 +9654,7 @@ snapshots:
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)
 
-  '@umijs/renderer-react@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)':
+  '@umijs/renderer-react@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)':
     dependencies:
       '@types/react': 16.14.65
       '@types/react-dom': 16.9.25(@types/react@16.14.65)
@@ -9647,7 +9662,7 @@ snapshots:
       '@umijs/runtime': 3.5.43(react@16.14.0)
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)
-      react-router-config: 5.1.1(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      react-router-config: 5.1.1(react-router@5.2.0(react@16.14.0))(react@16.14.0)
     transitivePeerDependencies:
       - react-router
 
@@ -9689,12 +9704,12 @@ snapshots:
       '@umijs/deps': 3.5.43
       '@umijs/utils': 3.5.43
 
-  '@umijs/types@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)':
+  '@umijs/types@3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)':
     dependencies:
       '@umijs/babel-preset-umi': 3.5.43
       '@umijs/core': 3.5.43
       '@umijs/deps': 3.5.43
-      '@umijs/renderer-react': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/renderer-react': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/server': 3.5.43
       '@umijs/utils': 3.5.43
       webpack-chain: 6.5.1
@@ -11220,7 +11235,7 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  dumi@1.1.54(react-dom@19.1.0(react@19.1.0))(react-router@5.2.0(react@16.14.0))(react@19.1.0)(typescript@5.8.3):
+  dumi@1.1.54(react-dom@19.1.0(react@19.1.0))(react-router@5.2.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3):
     dependencies:
       '@umijs/preset-dumi': 1.1.54(react-dom@19.1.0(react@19.1.0))(react-router@5.2.0(react@16.14.0))(react@19.1.0)(typescript@5.8.3)(umi@3.5.43(react-router@5.2.0(react@16.14.0)))
       umi: 3.5.43(react-router@5.2.0(react@16.14.0))
@@ -13223,6 +13238,10 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.1
 
+  mockjs@1.1.0:
+    dependencies:
+      commander: 13.1.0
+
   move-concurrently@1.0.1:
     dependencies:
       aproba: 1.2.0
@@ -14654,17 +14673,17 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
+  react-router-config@5.1.1(react-router@5.2.0(react@16.14.0))(react@16.14.0):
+    dependencies:
+      '@babel/runtime': 7.27.6
+      react: 16.14.0
+      react-router: 5.2.0(react@19.1.0)
+
   react-router-config@5.1.1(react-router@5.2.0(react@16.14.0))(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.27.6
       react: 19.1.0
-      react-router: 5.2.0(react@16.14.0)
-
-  react-router-config@5.1.1(react-router@5.2.0(react@19.1.0))(react@16.14.0):
-    dependencies:
-      '@babel/runtime': 7.27.6
-      react: 16.14.0
-      react-router: 5.2.0(react@16.14.0)
+      react-router: 5.2.0(react@19.1.0)
 
   react-router-dom@5.2.0(react@16.14.0):
     dependencies:
@@ -15740,12 +15759,12 @@ snapshots:
 
   umi@3.5.43(react-router@5.2.0(react@16.14.0)):
     dependencies:
-      '@umijs/bundler-webpack': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/bundler-webpack': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/core': 3.5.43
       '@umijs/deps': 3.5.43
       '@umijs/preset-built-in': 3.5.43(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       '@umijs/runtime': 3.5.43(react@16.14.0)
-      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@19.1.0))(react@16.14.0)
+      '@umijs/types': 3.5.43(react-dom@16.14.0(react@16.14.0))(react-router@5.2.0(react@16.14.0))(react@16.14.0)
       '@umijs/utils': 3.5.43
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)

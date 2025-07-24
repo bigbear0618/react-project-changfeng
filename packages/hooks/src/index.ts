@@ -9,6 +9,13 @@ import useMount from './useMount'
 import useGetState from './useGetState'
 import useBoolean from './useBoolean'
 import useUnmountedRef from './useUnmountedRef'
+import useRequest, { clearCache } from './useRequest'
+import useUpdate from './useUpdate'
+import useCreation from './useCreation'
+import useScroll from './useScroll'
+import useRafState from './useRafState'
+import useDocumentVisibility from './useDocumentVisibility'
+import useEventListener from './useEventListener'
 
 export {
   useToggle,
@@ -21,4 +28,12 @@ export {
   useGetState,
   useBoolean,
   useUnmountedRef,
+  useRequest,
+  useUpdate,
+  useCreation,
+  clearCache,
+  useScroll,
+  useRafState,
+  useDocumentVisibility,
+  useEventListener,
 }
