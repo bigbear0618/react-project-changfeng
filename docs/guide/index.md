@@ -15,16 +15,16 @@
 ## 技术选型
 1. 项目管理：pnpm + workspace
 2. 核心框架：React19 + TypeScript 5.x
-  1. 作用：Hooks开发与类型安全
+  - 作用：Hooks开发与类型安全
 3. 打包工具：Rollup + plugins
-  1. 作用：生产级打包
+  - 作用：生产级打包
 4. 测试工具：vitest + React Testing Library
-  1. 作用：单元测试+Hooks模拟测试
-  2. 完善的测试用例  确保代码质量
+  - 作用：单元测试+Hooks模拟测试
+  - 完善的测试用例  确保代码质量
 5. 工程化：Eslint + Prettier + Husky + Lint-staged
-  1. 作用：代码规范和钩子
+  - 作用：代码规范和钩子
 6. 站点：dumi2
-  1. 作用：交互文档演示 
-  2. 为组件开发场景而生的文档工具
+  - 作用：交互文档演示 
+  - 为组件开发场景而生的文档工具
 7. CI/CD: GitHub Actions
-  1. 作用：站点的自动化构建和部署
+  - 作用：站点的自动化构建和部署
